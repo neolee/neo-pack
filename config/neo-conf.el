@@ -46,6 +46,9 @@
 ;; Make any instance of Emacs know my PATH well
 (setenv "PATH" (shell-command-to-string "echo $PATH"))
 
+;; Disable Emacs Live's zoning if any trouble
+; (setq live-disable-zone t)
+
 ;; Forcing show-paren-mode
 (show-paren-mode t)
 (setq show-paren-style 'parentheses)
