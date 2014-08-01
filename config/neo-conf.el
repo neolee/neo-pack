@@ -49,10 +49,6 @@
 ;; Disable Emacs Live's zoning if any trouble
 ; (setq live-disable-zone t)
 
-;; Forcing show-paren-mode
-(show-paren-mode t)
-(setq show-paren-style 'parentheses)
-
 ;; Misc setting
 (global-hl-line-mode 1)
 (add-to-list 'default-frame-alist '(cursor-color . "palegoldenrod"))
