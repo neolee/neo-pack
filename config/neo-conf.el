@@ -65,3 +65,6 @@
 (add-hook 'cider-repl-mode-hook 'ac-nrepl-setup)
 (add-to-list 'ac-modes 'cider-mode)
 (add-to-list 'ac-modes 'cider-repl-mode)
+
+;; Rainbow mode for nREPL as well
+(add-hook 'cider-repl-mode-hook 'rainbow-delimiters-mode)
