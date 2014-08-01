@@ -1,5 +1,8 @@
 ;; We need mouse wheel!
 (setq scroll-step 1)
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1)))
+(setq mouse-wheel-progressive-speed nil)
+(setq mouse-wheel-follow-mouse 't)
 
 ;; We hate the toolbar
 (tool-bar-mode 0)
@@ -55,3 +58,10 @@
 
 ;; Custom font, trick from https://github.com/overtone/emacs-live/issues/25
 (add-to-list 'default-frame-alist '(font . "PragmataPro 14"))
+
+;; Auto-complete for nREPL (ac-nrepl)
+(require 'ac-nrepl)
+(add-hook 'cider-mode-hook 'ac-nrepl-setup)
+(add-hook 'cider-repl-mode-hook 'ac-nrepl-setup)
+(add-to-list 'ac-modes 'cider-mode)
+(add-to-list 'ac-modes 'cider-repl-mode)
