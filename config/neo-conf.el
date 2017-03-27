@@ -65,6 +65,9 @@
 ;; Custom font, trick from https://github.com/overtone/emacs-live/issues/25
 (add-to-list 'default-frame-alist '(font . "PragmataPro 14"))
 
+;; Turn off CIDER help banner
+(setq cider-repl-display-help-banner nil)
+
 ;; Auto-complete for nREPL (ac-nrepl)
 ; (require 'ac-nrepl)
 ; (add-hook 'cider-mode-hook 'ac-nrepl-setup)
