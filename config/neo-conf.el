@@ -63,7 +63,7 @@
 (add-to-list 'default-frame-alist '(cursor-color . "palegoldenrod"))
 
 ;; Custom font, trick from https://github.com/overtone/emacs-live/issues/25
-(add-to-list 'default-frame-alist '(font . "PragmataPro 14"))
+(add-to-list 'default-frame-alist '(font . "PragmataPro 15"))
 
 ;; Turn off CIDER help banner
 (setq cider-repl-display-help-banner nil)
