@@ -4,7 +4,7 @@
 (setq mouse-wheel-progressive-speed nil)
 (setq mouse-wheel-follow-mouse 't)
 
-;; We hate the toolbar
+;; If we hate the toolbar
 (tool-bar-mode 0)
 
 ;; Some tweaks
@@ -12,8 +12,8 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 (mouse-avoidance-mode 'cat-and-mouse)
 
-(add-to-list 'default-frame-alist '(height . 54))
-(add-to-list 'default-frame-alist '(width . 210))
+(add-to-list 'default-frame-alist '(height . 62))
+(add-to-list 'default-frame-alist '(width . 224))
 
 ;; I hate auto save and auto backup files scattered all over the file system
 ;; so we turn them off...
